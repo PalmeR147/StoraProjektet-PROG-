@@ -1,0 +1,10 @@
+c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Capture.xnb
+c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\StoraProjektet.exe
+c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\StoraProjektet.pdb
+c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\obj\x86\Debug\StoraProjektet.exe
+c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\obj\x86\Debug\StoraProjektet.pdb
+c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\ENAMI.xnb
+C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\grass_tile.xnb
+C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\imgres.xnb

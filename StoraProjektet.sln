@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoraProjektet", "StoraProjektet\StoraProjektet\StoraProjektet.csproj", "{0F7A876B-47AF-4BF4-B773-000F53791B8B}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "StoraProjektetContent", "StoraProjektet\StoraProjektetContent\StoraProjektetContent.contentproj", "{61C09A96-43C9-4F8B-A024-9F3D2266988B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F7A876B-47AF-4BF4-B773-000F53791B8B}.Debug|x86.ActiveCfg = Debug|x86
+		{0F7A876B-47AF-4BF4-B773-000F53791B8B}.Debug|x86.Build.0 = Debug|x86
+		{0F7A876B-47AF-4BF4-B773-000F53791B8B}.Release|x86.ActiveCfg = Release|x86
+		{0F7A876B-47AF-4BF4-B773-000F53791B8B}.Release|x86.Build.0 = Release|x86
+		{61C09A96-43C9-4F8B-A024-9F3D2266988B}.Debug|x86.ActiveCfg = Debug|x86
+		{61C09A96-43C9-4F8B-A024-9F3D2266988B}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

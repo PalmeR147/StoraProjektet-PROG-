@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Capture.PNG</Source>
+      <Name>Capture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Capture.xnb</Output>
+      <Time>2013-04-10T08:44:25.6179626+02:00</Time>
+    </Item>
+    <Item>
+      <Source>ENAMI.png</Source>
+      <Name>ENAMI</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\ENAMI.xnb</Output>
+      <Time>2013-04-10T09:34:29.2132646+02:00</Time>
+    </Item>
+    <Item>
+      <Source>grass_tile.jpg</Source>
+      <Name>grass_tile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\grass_tile.xnb</Output>
+      <Time>2013-04-11T13:18:22.0609448+02:00</Time>
+    </Item>
+    <Item>
+      <Source>imgres.jpg</Source>
+      <Name>imgres</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\imgres.xnb</Output>
+      <Time>2013-04-11T13:18:22.0629449+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektetContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektetContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-10-16T08:31:14.3375004+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
