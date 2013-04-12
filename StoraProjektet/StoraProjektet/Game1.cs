@@ -57,7 +57,8 @@ namespace StoraProjektet
         /// </summary>
         
         //Vektorer:
-        Vector2 charPlace = new Vector2(500, 250);
+        Vector2 charPlace = new Vector2(256, 256);
+        Vector2 walkBoxP = new Vector2(256, 256);
         Vector2 enemyPlace = new Vector2(150, 150);
 
         //Texturer & rektanglar:
@@ -67,9 +68,9 @@ namespace StoraProjektet
         List<Rectangle> collisionTiles = new List<Rectangle>();
 
         //Variabler
-        float speed = 16f;
-        int tileWidth = 128;
-        int tileHeight = 128;
+        float speed = 64f;
+        int tileWidth = 64;
+        int tileHeight = 64;
 
         //Övrigt
         KeyboardState oldState;
@@ -91,7 +92,7 @@ namespace StoraProjektet
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            character = Content.Load<Texture2D>("Capture");
+            character = Content.Load<Texture2D>("Textures/Char");
             enemy = Content.Load<Texture2D>("ENAMI");
 
             tiles.Add(Content.Load<Texture2D>("grass_tile"));
@@ -120,6 +121,7 @@ namespace StoraProjektet
                 this.Exit();
             // TODO: Add your update logic here
             //Rektanglar / Hitboxes
+            Rectangle walkBox = new Rectangle(Convert.ToInt32(charPlace.X), Convert.ToInt32(charPlace.Y), character.Width, character.Height);
             Rectangle charBox = new Rectangle(Convert.ToInt32(charPlace.X), Convert.ToInt32(charPlace.Y), character.Width, character.Height);
             Rectangle enemyBox = new Rectangle(Convert.ToInt32(enemyPlace.X), Convert.ToInt32(enemyPlace.Y), enemy.Width, enemy.Height);
             /*if (charBox.Intersects(enemyBox))
@@ -174,7 +176,9 @@ namespace StoraProjektet
             if (currentState.IsKeyDown(Keys.Right) && !oldState.IsKeyDown(Keys.Right))
                 charPlace.X += speed;
             if (currentState.IsKeyDown(Keys.Left) && !oldState.IsKeyDown(Keys.Left))
+            {
                 charPlace.X -= speed;
+            }
             if (currentState.IsKeyDown(Keys.Down) && !oldState.IsKeyDown(Keys.Down))
                 charPlace.Y += speed;
             if (currentState.IsKeyDown(Keys.Up) && !oldState.IsKeyDown(Keys.Up))
@@ -205,7 +209,7 @@ namespace StoraProjektet
             //^Map^
             spriteBatch.End();
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            spriteBatch.Draw(character, charPlace, Color.White);
+            spriteBatch.Draw(character, new Rectangle(Convert.ToInt32(charPlace.X) + 2,Convert.ToInt32(charPlace.Y) + 2,60,60), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
         }

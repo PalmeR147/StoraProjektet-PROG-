@@ -18,3 +18,4 @@ C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet
 C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\imgres.xnb
 C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\StoraProjektet.exe
 C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\StoraProjektet.pdb
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Textures\Char.xnb
