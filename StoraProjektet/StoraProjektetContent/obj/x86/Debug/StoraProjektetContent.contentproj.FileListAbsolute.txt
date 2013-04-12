@@ -1,1 +1,2 @@
 c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektetContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektetContent\obj\x86\Debug\ResolveAssemblyReference.cache

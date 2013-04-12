@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Capture.xnb</Output>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Capture.xnb</Output>
       <Time>2013-04-10T08:44:25.6179626+02:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\ENAMI.xnb</Output>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\ENAMI.xnb</Output>
       <Time>2013-04-10T09:34:29.2132646+02:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\grass_tile.xnb</Output>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\grass_tile.xnb</Output>
       <Time>2013-04-11T13:18:22.0609448+02:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\imgres.xnb</Output>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\imgres.xnb</Output>
       <Time>2013-04-11T13:18:22.0629449+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -43,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektetContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektetContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektetContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektetContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

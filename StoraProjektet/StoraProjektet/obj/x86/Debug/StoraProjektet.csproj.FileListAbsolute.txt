@@ -8,3 +8,13 @@ c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet
 c:\users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\ENAMI.xnb
 C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\grass_tile.xnb
 C:\Users\nti\documents\visual studio 2010\Projects\StoraProjektet\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\imgres.xnb
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\obj\x86\Debug\StoraProjektet.exe
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\obj\x86\Debug\StoraProjektet.pdb
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Capture.xnb
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\ENAMI.xnb
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\grass_tile.xnb
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\imgres.xnb
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\StoraProjektet.exe
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\StoraProjektet.pdb

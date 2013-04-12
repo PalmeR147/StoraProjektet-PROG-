@@ -46,6 +46,7 @@ namespace StoraProjektet
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            oldState = Keyboard.GetState();
 
             base.Initialize();
         }
@@ -59,17 +60,19 @@ namespace StoraProjektet
         Vector2 charPlace = new Vector2(500, 250);
         Vector2 enemyPlace = new Vector2(150, 150);
 
-        //Texturer:
+        //Texturer & rektanglar:
         Texture2D character;
         Texture2D enemy;
         List<Texture2D> tiles = new List<Texture2D>();
         List<Rectangle> collisionTiles = new List<Rectangle>();
 
         //Variabler
-        float speed = 5f;
-        int tileWidth = 24;
-        int tileHeight = 24;
+        float speed = 16f;
+        int tileWidth = 128;
+        int tileHeight = 128;
 
+        //Övrigt
+        KeyboardState oldState;
 
         /*int[,] map = {
             {1,0,1,0},
@@ -115,7 +118,6 @@ namespace StoraProjektet
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
             // TODO: Add your update logic here
             //Rektanglar / Hitboxes
             Rectangle charBox = new Rectangle(Convert.ToInt32(charPlace.X), Convert.ToInt32(charPlace.Y), character.Width, character.Height);
@@ -169,14 +171,15 @@ namespace StoraProjektet
         {
             KeyboardState currentState = Keyboard.GetState();
 
-            if (currentState.IsKeyDown(Keys.Right))
+            if (currentState.IsKeyDown(Keys.Right) && !oldState.IsKeyDown(Keys.Right))
                 charPlace.X += speed;
-            if (currentState.IsKeyDown(Keys.Left))
+            if (currentState.IsKeyDown(Keys.Left) && !oldState.IsKeyDown(Keys.Left))
                 charPlace.X -= speed;
-            if (currentState.IsKeyDown(Keys.Down))
+            if (currentState.IsKeyDown(Keys.Down) && !oldState.IsKeyDown(Keys.Down))
                 charPlace.Y += speed;
-            if (currentState.IsKeyDown(Keys.Up))
+            if (currentState.IsKeyDown(Keys.Up) && !oldState.IsKeyDown(Keys.Up))
                 charPlace.Y -= speed;
+            oldState = currentState;
         }
 
         /// <summary>
