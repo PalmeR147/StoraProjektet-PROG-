@@ -185,7 +185,7 @@ namespace StoraProjektet
                 charPlace.Y -= speed;
             oldState = currentState;
         }
-
+        //Test
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
