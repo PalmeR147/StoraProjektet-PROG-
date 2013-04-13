@@ -57,20 +57,20 @@ namespace StoraProjektet
         /// </summary>
         
         //Vektorer:
-        Vector2 charPlace = new Vector2(256, 256);
-        Vector2 walkBoxP = new Vector2(256, 256);
+        public static Vector2 charPlace = new Vector2(256, 256);
+        //Vector2 walkBoxP = new Vector2(256, 256);
         Vector2 enemyPlace = new Vector2(150, 150);
 
         //Texturer & rektanglar:
-        Texture2D character;
+        public static Texture2D character;
         Texture2D enemy;
         List<Texture2D> tiles = new List<Texture2D>();
-        List<Rectangle> collisionTiles = new List<Rectangle>();
+        public static List<Rectangle> collisionTiles = new List<Rectangle>();
 
         //Variabler
-        float speed = 64f;
-        int tileWidth = 64;
-        int tileHeight = 64;
+        public static float speed = 16f;
+        int tileWidth = 16;
+        int tileHeight = 16;
 
         //Övrigt
         KeyboardState oldState;
@@ -121,7 +121,7 @@ namespace StoraProjektet
                 this.Exit();
             // TODO: Add your update logic here
             //Rektanglar / Hitboxes
-            Rectangle walkBox = new Rectangle(Convert.ToInt32(charPlace.X), Convert.ToInt32(charPlace.Y), character.Width, character.Height);
+            //Rectangle walkBox = new Rectangle(Convert.ToInt32(charPlace.X), Convert.ToInt32(charPlace.Y), character.Width, character.Height);
             Rectangle charBox = new Rectangle(Convert.ToInt32(charPlace.X), Convert.ToInt32(charPlace.Y), character.Width, character.Height);
             Rectangle enemyBox = new Rectangle(Convert.ToInt32(enemyPlace.X), Convert.ToInt32(enemyPlace.Y), enemy.Width, enemy.Height);
             /*if (charBox.Intersects(enemyBox))
@@ -129,11 +129,11 @@ namespace StoraProjektet
             else
                 speed = 5f;*/
 
-            for (int i = 0; i < collisionTiles.Count; i++ )
+            /*for (int i = 0; i < collisionTiles.Count; i++ )
             {
                 if (charBox.Intersects(collisionTiles[i]))
                     speed = 0;
-            }
+            }*/
             
 
             int maxX = graphics.GraphicsDevice.Viewport.Width - character.Width;
@@ -142,22 +142,22 @@ namespace StoraProjektet
             int minY = 0;
 
             if (charPlace.X > maxX){
-                speed = 0f;
+                //speed = 0f;
                 charPlace.X = maxX;
             }
             if (charPlace.X < minX)
             {
-                speed = 0f;
+                //speed = 0f;
                 charPlace.X = minX;
             }
             if (charPlace.Y > maxY)
             {
-                speed = 0f;
+                //speed = 0f;
                 charPlace.Y = maxY;
             }
             if (charPlace.Y < minY)
             {
-                speed = 0f;
+                //speed = 0f;
                 charPlace.Y = minY;
             }
             //else
@@ -169,20 +169,73 @@ namespace StoraProjektet
             base.Update(gameTime);
         }
 
+        /*public bool isColliding(string direction)
+        {
+            int testCharX = Convert.ToInt32(charPlace.X);
+            int testCharY = Convert.ToInt32(charPlace.Y);
+            int col = 0;
+            Rectangle testCol;
+            switch (direction)
+            {
+                case "Right":
+                    testCharX -= Convert.ToInt32(speed);
+                    testCol = new Rectangle(testCharX, testCharY, character.Width, character.Height);
+
+                    for (int i = 0; i < collisionTiles.Count; i++)
+                    {
+                        if (testCol.Intersects(collisionTiles[i]))
+                            col++;
+                    }
+
+                    if (col > 0)
+                        return true;
+                    else
+                        return false;
+
+                    break;
+                case "Left":
+                    testCharX -= Convert.ToInt32(speed);
+                    testCol = new Rectangle(testCharX, testCharY, character.Width, character.Height);
+
+                    for (int i = 0; i < collisionTiles.Count; i++)
+                    {
+                        if (testCol.Intersects(collisionTiles[i]))
+                            col++;
+                    }
+
+                    if (col > 0)
+                        return true;
+                    else
+                        return false;
+
+                    break;
+                case "Down":
+                    break;
+                case "Up":
+                    break;
+                default:
+                    return true;
+                    break;
+            }
+            return true;
+        }*/
+
         private void updateInput()
         {
             KeyboardState currentState = Keyboard.GetState();
 
             if (currentState.IsKeyDown(Keys.Right) && !oldState.IsKeyDown(Keys.Right))
-                charPlace.X += speed;
+                if (!Collision.isColliding("Right"))
+                    charPlace.X += speed;
             if (currentState.IsKeyDown(Keys.Left) && !oldState.IsKeyDown(Keys.Left))
-            {
-                charPlace.X -= speed;
-            }
+                if(!Collision.isColliding("Left"))
+                    charPlace.X -= speed;
             if (currentState.IsKeyDown(Keys.Down) && !oldState.IsKeyDown(Keys.Down))
-                charPlace.Y += speed;
+                if(!Collision.isColliding("Down"))
+                    charPlace.Y += speed;
             if (currentState.IsKeyDown(Keys.Up) && !oldState.IsKeyDown(Keys.Up))
-                charPlace.Y -= speed;
+                if (!Collision.isColliding("Up"))
+                    charPlace.Y -= speed;
             oldState = currentState;
         }
 
@@ -209,7 +262,7 @@ namespace StoraProjektet
             //^Map^
             spriteBatch.End();
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            spriteBatch.Draw(character, new Rectangle(Convert.ToInt32(charPlace.X) + 2,Convert.ToInt32(charPlace.Y) + 2,60,60), Color.White);
+            spriteBatch.Draw(character, new Rectangle(Convert.ToInt32(charPlace.X) + 2,Convert.ToInt32(charPlace.Y) + 2,12,12), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
         }
