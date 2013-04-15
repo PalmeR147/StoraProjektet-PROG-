@@ -64,6 +64,7 @@ namespace StoraProjektet
         //Texturer & rektanglar:
         public static Texture2D character;
         Texture2D enemy;
+        Texture2D test;
         List<Texture2D> tiles = new List<Texture2D>();
         public static List<Rectangle> collisionTiles = new List<Rectangle>();
 
@@ -94,6 +95,7 @@ namespace StoraProjektet
             // TODO: use this.Content to load your game content here
             character = Content.Load<Texture2D>("Textures/Char");
             enemy = Content.Load<Texture2D>("ENAMI");
+            test = Content.Load<Texture2D>("Textures/Namnlös");
 
             tiles.Add(Content.Load<Texture2D>("grass_tile"));
             tiles.Add(Content.Load<Texture2D>("imgres"));
@@ -260,8 +262,14 @@ namespace StoraProjektet
                 }
             }
             //^Map^
+
+
             spriteBatch.End();
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+            for (int i = 0; i < collisionTiles.Count; i++)
+            {
+                spriteBatch.Draw(test, collisionTiles[i], Color.White);
+            }
             spriteBatch.Draw(character, new Rectangle(Convert.ToInt32(charPlace.X) + 2,Convert.ToInt32(charPlace.Y) + 2,12,12), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);

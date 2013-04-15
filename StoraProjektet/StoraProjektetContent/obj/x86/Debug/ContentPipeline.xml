@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Capture.xnb</Output>
-      <Time>2013-04-12T18:29:54.7888933+02:00</Time>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Capture.xnb</Output>
+      <Time>2013-04-15T13:07:56.7008015+02:00</Time>
     </Item>
     <Item>
       <Source>ENAMI.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\ENAMI.xnb</Output>
-      <Time>2013-04-12T18:29:54.7888933+02:00</Time>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\ENAMI.xnb</Output>
+      <Time>2013-04-15T13:07:56.7008015+02:00</Time>
     </Item>
     <Item>
       <Source>grass_tile.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\grass_tile.xnb</Output>
-      <Time>2013-04-12T18:29:54.8078944+02:00</Time>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\grass_tile.xnb</Output>
+      <Time>2013-04-15T13:07:56.7028017+02:00</Time>
     </Item>
     <Item>
       <Source>imgres.jpg</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\imgres.xnb</Output>
-      <Time>2013-04-12T18:29:54.8088944+02:00</Time>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\imgres.xnb</Output>
+      <Time>2013-04-15T13:07:56.7038017+02:00</Time>
     </Item>
     <Item>
       <Source>Textures\Char.bmp</Source>
@@ -43,8 +43,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Textures\Char.xnb</Output>
-      <Time>2013-04-12T18:29:54.8078944+02:00</Time>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Textures\Char.xnb</Output>
+      <Time>2013-04-15T13:07:56.7028017+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Namnlös.png</Source>
+      <Name>Textures\Namnlös</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Textures\Namnlös.xnb</Output>
+      <Time>2013-04-15T13:17:27.5774538+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -52,10 +61,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektetContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektetContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektetContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektetContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -84,7 +93,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-10-15T06:56:34.9820859+02:00</Value>
+        <Value>2012-10-16T08:31:14.3375004+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

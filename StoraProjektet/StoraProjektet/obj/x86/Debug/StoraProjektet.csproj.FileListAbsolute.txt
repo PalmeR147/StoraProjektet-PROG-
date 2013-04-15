@@ -30,3 +30,4 @@ C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjek
 C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\obj\x86\Debug\StoraProjektet.exe
 C:\Users\Marcus\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\obj\x86\Debug\StoraProjektet.pdb
+C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Textures\Namnlös.xnb
