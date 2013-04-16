@@ -19,7 +19,7 @@ namespace StoraProjektet
 
                 case "Right":
                     testCharX += Convert.ToInt32(Game1.speed);
-                    testCol = new Rectangle(testCharX, testCharY, Game1.character.Width, Game1.character.Height);
+                    testCol = new Rectangle(testCharX, testCharY, 12, 12);
                     for (int i = 0; i < Game1.collisionTiles.Count; i++)
                     {
                         if (testCol.Intersects(Game1.collisionTiles[i]))
@@ -32,7 +32,7 @@ namespace StoraProjektet
 
                 case "Left":
                     testCharX -= Convert.ToInt32(Game1.speed);
-                    testCol = new Rectangle(testCharX, testCharY, Game1.character.Width, Game1.character.Height);
+                    testCol = new Rectangle(testCharX, testCharY, 12, 12);
                     for (int i = 0; i < Game1.collisionTiles.Count; i++)
                     {
                         if (testCol.Intersects(Game1.collisionTiles[i]))
@@ -45,7 +45,7 @@ namespace StoraProjektet
 
                 case "Down":
                     testCharY += Convert.ToInt32(Game1.speed);
-                    testCol = new Rectangle(testCharX, testCharY, Game1.character.Width, Game1.character.Height);
+                    testCol = new Rectangle(testCharX, testCharY, 12, 12);
                     for (int i = 0; i < Game1.collisionTiles.Count; i++)
                     {
                         if (testCol.Intersects(Game1.collisionTiles[i]))
@@ -58,7 +58,7 @@ namespace StoraProjektet
 
                 case "Up":
                     testCharY -= Convert.ToInt32(Game1.speed);
-                    testCol = new Rectangle(testCharX, testCharY, Game1.character.Width, Game1.character.Height);
+                    testCol = new Rectangle(testCharX, testCharY, 12, 12);
                     for (int i = 0; i < Game1.collisionTiles.Count; i++)
                     {
                         if (testCol.Intersects(Game1.collisionTiles[i]))
@@ -70,7 +70,7 @@ namespace StoraProjektet
                         return false;
             }
 
-            return true;
+            return false;
         }
     }
 

@@ -57,7 +57,7 @@ namespace StoraProjektet
         /// </summary>
         
         //Vektorer:
-        public static Vector2 charPlace = new Vector2(256, 256);
+        public static Vector2 charPlace = new Vector2(80, 64);
         //Vector2 walkBoxP = new Vector2(256, 256);
         Vector2 enemyPlace = new Vector2(150, 150);
 
@@ -266,10 +266,10 @@ namespace StoraProjektet
 
             spriteBatch.End();
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            for (int i = 0; i < collisionTiles.Count; i++)
+            /*for (int i = 0; i < collisionTiles.Count; i++)
             {
                 spriteBatch.Draw(test, collisionTiles[i], Color.White);
-            }
+            }*/
             spriteBatch.Draw(character, new Rectangle(Convert.ToInt32(charPlace.X) + 2,Convert.ToInt32(charPlace.Y) + 2,12,12), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
