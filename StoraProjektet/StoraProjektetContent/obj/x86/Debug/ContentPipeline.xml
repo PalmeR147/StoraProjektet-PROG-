@@ -64,6 +64,15 @@
       <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Textures\water.xnb</Output>
       <Time>2013-04-16T08:54:10.0981248+02:00</Time>
     </Item>
+    <Item>
+      <Source>Textures\TileSets\tileset.jpg</Source>
+      <Name>Textures\TileSets\tileset</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Textures\TileSets\tileset.xnb</Output>
+      <Time>2013-04-16T10:04:18.2954107+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

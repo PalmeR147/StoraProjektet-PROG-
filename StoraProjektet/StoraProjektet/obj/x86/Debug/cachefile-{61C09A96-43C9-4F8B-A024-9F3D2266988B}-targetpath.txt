@@ -5,3 +5,4 @@ Content\imgres.xnb
 Content\Textures\Char.xnb
 Content\Textures\Namnlös.xnb
 Content\Textures\water.xnb
+Content\Textures\TileSets\tileset.xnb

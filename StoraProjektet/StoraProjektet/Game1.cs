@@ -56,7 +56,7 @@ namespace StoraProjektet
         /// all of your content.
         /// </summary>
 
-        public static int gameSize = 16;
+        public static int gameSize = 32;
         //Vektorer:
         public static Vector2 charPlace = new Vector2(gameSize, 0);
         //Vector2 walkBoxP = new Vector2(256, 256);
@@ -66,6 +66,7 @@ namespace StoraProjektet
         public static Texture2D character;
         Texture2D enemy;
         Texture2D test;
+        Texture2D tileSet;
         List<Texture2D> tiles = new List<Texture2D>();
         public static List<Rectangle> collisionTiles = new List<Rectangle>();
 
@@ -99,6 +100,8 @@ namespace StoraProjektet
             character = Content.Load<Texture2D>("Textures/Char");
             enemy = Content.Load<Texture2D>("ENAMI");
             test = Content.Load<Texture2D>("Textures/Namnlös");
+
+            tileSet = Content.Load<Texture2D>("Textures/TileSets/tileset");
 
             tiles.Add(Content.Load<Texture2D>("grass_tile"));
             tiles.Add(Content.Load<Texture2D>("imgres"));
@@ -262,7 +265,8 @@ namespace StoraProjektet
             {
                 for (int x = 0; x < Maps.map1.GetLength(1); x++)
                 {
-                    spriteBatch.Draw(tiles[Maps.map1[y,x]], new Rectangle(x * tileWidth, y * tileHeight, tileWidth, tileHeight), Color.White);
+                    //spriteBatch.Draw(tiles[Maps.map1[y,x]], new Rectangle(x * tileWidth, y * tileHeight, tileWidth, tileHeight), new Rectangle(5,5,25,25), Color.White);
+                    spriteBatch.Draw(tileSet, new Rectangle(x * tileWidth, y * tileHeight, tileWidth, tileHeight), new Rectangle(Maps.map1[y,x]*48, 0, 48, 48), Color.White);
                 }
             }
             //^Map^
