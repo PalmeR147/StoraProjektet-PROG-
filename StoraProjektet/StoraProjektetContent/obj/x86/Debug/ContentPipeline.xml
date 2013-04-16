@@ -55,6 +55,15 @@
       <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Textures\Namnlös.xnb</Output>
       <Time>2013-04-15T13:17:27.5774538+02:00</Time>
     </Item>
+    <Item>
+      <Source>Textures\water.png</Source>
+      <Name>Textures\water</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\nti\Documents\GitHub\StoraProjektet-PROG-\StoraProjektet\StoraProjektet\bin\x86\Debug\Content\Textures\water.xnb</Output>
+      <Time>2013-04-16T08:54:10.0981248+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

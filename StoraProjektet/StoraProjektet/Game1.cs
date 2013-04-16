@@ -18,7 +18,7 @@ namespace StoraProjektet
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        
         public Game1()
         {
             IsMouseVisible = true;
@@ -29,7 +29,7 @@ namespace StoraProjektet
             {
                 for (int x = 0; x < Maps.map1.GetLength(1); x++)
                 {
-                    if (Maps.map1[y, x] == 1)
+                    if (Maps.map1[y, x] == 1 || Maps.map1[y,x] == 2)
                     {
                         collisionTiles.Add(new Rectangle(x * tileWidth, y * tileHeight, tileWidth, tileHeight));
                     }
@@ -55,9 +55,10 @@ namespace StoraProjektet
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
-        
+
+        public static int gameSize = 16;
         //Vektorer:
-        public static Vector2 charPlace = new Vector2(80, 64);
+        public static Vector2 charPlace = new Vector2(gameSize, 0);
         //Vector2 walkBoxP = new Vector2(256, 256);
         Vector2 enemyPlace = new Vector2(150, 150);
 
@@ -69,9 +70,11 @@ namespace StoraProjektet
         public static List<Rectangle> collisionTiles = new List<Rectangle>();
 
         //Variabler
-        public static float speed = 16f;
-        int tileWidth = 16;
-        int tileHeight = 16;
+        public static float speed = gameSize;
+        public static int charWidth = Convert.ToInt32(0.125 * gameSize);
+        public static int charHeight = Convert.ToInt32(0.125 * gameSize);
+        int tileWidth = gameSize;
+        int tileHeight = gameSize;
 
         //Övrigt
         KeyboardState oldState;
@@ -99,6 +102,7 @@ namespace StoraProjektet
 
             tiles.Add(Content.Load<Texture2D>("grass_tile"));
             tiles.Add(Content.Load<Texture2D>("imgres"));
+            tiles.Add(Content.Load<Texture2D>("Textures/water"));
             
         }
 
@@ -138,8 +142,8 @@ namespace StoraProjektet
             }*/
             
 
-            int maxX = graphics.GraphicsDevice.Viewport.Width - character.Width;
-            int maxY = graphics.GraphicsDevice.Viewport.Height - character.Height;
+            int maxX = graphics.GraphicsDevice.Viewport.Width - charWidth;
+            int maxY = graphics.GraphicsDevice.Viewport.Height - charHeight;
             int minX = 0;
             int minY = 0;
 
@@ -270,7 +274,7 @@ namespace StoraProjektet
             {
                 spriteBatch.Draw(test, collisionTiles[i], Color.White);
             }*/
-            spriteBatch.Draw(character, new Rectangle(Convert.ToInt32(charPlace.X) + 2,Convert.ToInt32(charPlace.Y) + 2,12,12), Color.White);
+            spriteBatch.Draw(character, new Rectangle(Convert.ToInt32(charPlace.X) + charWidth, Convert.ToInt32(charPlace.Y) + charHeight, Convert.ToInt32((0.75 * gameSize)), Convert.ToInt32((0.75 * gameSize))), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
         }
