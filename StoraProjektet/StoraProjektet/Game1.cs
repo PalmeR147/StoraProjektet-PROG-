@@ -56,7 +56,7 @@ namespace StoraProjektet
         /// all of your content.
         /// </summary>
 
-        public static int gameSize = 8;
+        public static int gameSize = 16;
         //Vektorer:
         public static Vector2 charPlace = new Vector2(gameSize, 0);
         //Vector2 walkBoxP = new Vector2(256, 256);
@@ -144,7 +144,6 @@ namespace StoraProjektet
                     speed = 0;
             }*/
             
-
             int maxX = graphics.GraphicsDevice.Viewport.Width - charWidth;
             int maxY = graphics.GraphicsDevice.Viewport.Height - charHeight;
             int minX = 0;
@@ -234,17 +233,13 @@ namespace StoraProjektet
             KeyboardState currentState = Keyboard.GetState();
 
             if (currentState.IsKeyDown(Keys.Right) && !oldState.IsKeyDown(Keys.Right))
-                if (!Collision.isColliding("Right"))
-                    charPlace.X += speed;
+                Movement.Move("Right");
             if (currentState.IsKeyDown(Keys.Left) && !oldState.IsKeyDown(Keys.Left))
-                if(!Collision.isColliding("Left"))
-                    charPlace.X -= speed;
+                Movement.Move("Left");
             if (currentState.IsKeyDown(Keys.Down) && !oldState.IsKeyDown(Keys.Down))
-                if(!Collision.isColliding("Down"))
-                    charPlace.Y += speed;
+                Movement.Move("Down");
             if (currentState.IsKeyDown(Keys.Up) && !oldState.IsKeyDown(Keys.Up))
-                if (!Collision.isColliding("Up"))
-                    charPlace.Y -= speed;
+                Movement.Move("Up");
             oldState = currentState;
         }
 
