@@ -29,7 +29,7 @@ namespace StoraProjektet
             {
                 for (int x = 0; x < Maps.map1.GetLength(1); x++)
                 {
-                    if (Maps.map1[y, x] == 1 || Maps.map1[y,x] == 2)
+                    if (Maps.map1[y, x] == 0 || Maps.map1[y,x] == 2)
                     {
                         collisionTiles.Add(new Rectangle(x * tileWidth, y * tileHeight, tileWidth, tileHeight));
                     }
@@ -56,7 +56,7 @@ namespace StoraProjektet
         /// all of your content.
         /// </summary>
 
-        public static int gameSize = 32;
+        public static int gameSize = 8;
         //Vektorer:
         public static Vector2 charPlace = new Vector2(gameSize, 0);
         //Vector2 walkBoxP = new Vector2(256, 256);
