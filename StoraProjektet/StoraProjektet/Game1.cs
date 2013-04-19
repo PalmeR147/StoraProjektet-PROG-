@@ -80,16 +80,6 @@ namespace StoraProjektet
         //Övrigt
         KeyboardState oldState;
 
-        /*int[,] map = {
-            {1,0,1,0},
-            {1,0,1,0},
-            {1,0,1,0},
-            {1,0,1,0},
-            {1,0,1,0},
-            {1,0,1,0},
-            {1,0,1,0}
-                    };*/
-
 
         protected override void LoadContent()
         {
@@ -106,6 +96,8 @@ namespace StoraProjektet
             tiles.Add(Content.Load<Texture2D>("grass_tile"));
             tiles.Add(Content.Load<Texture2D>("imgres"));
             tiles.Add(Content.Load<Texture2D>("Textures/water"));
+
+            Player p1 = new Player(150, 150);
             
         }
 
@@ -133,16 +125,6 @@ namespace StoraProjektet
             //Rectangle walkBox = new Rectangle(Convert.ToInt32(charPlace.X), Convert.ToInt32(charPlace.Y), character.Width, character.Height);
             Rectangle charBox = new Rectangle(Convert.ToInt32(charPlace.X), Convert.ToInt32(charPlace.Y), character.Width, character.Height);
             Rectangle enemyBox = new Rectangle(Convert.ToInt32(enemyPlace.X), Convert.ToInt32(enemyPlace.Y), enemy.Width, enemy.Height);
-            /*if (charBox.Intersects(enemyBox))
-                speed = 1f;
-            else
-                speed = 5f;*/
-
-            /*for (int i = 0; i < collisionTiles.Count; i++ )
-            {
-                if (charBox.Intersects(collisionTiles[i]))
-                    speed = 0;
-            }*/
             
             int maxX = graphics.GraphicsDevice.Viewport.Width - charWidth;
             int maxY = graphics.GraphicsDevice.Viewport.Height - charHeight;
@@ -173,74 +155,8 @@ namespace StoraProjektet
 
 
 
-            updateInput();
+            Movement.Update();
             base.Update(gameTime);
-        }
-
-        /*public bool isColliding(string direction)
-        {
-            int testCharX = Convert.ToInt32(charPlace.X);
-            int testCharY = Convert.ToInt32(charPlace.Y);
-            int col = 0;
-            Rectangle testCol;
-            switch (direction)
-            {
-                case "Right":
-                    testCharX -= Convert.ToInt32(speed);
-                    testCol = new Rectangle(testCharX, testCharY, character.Width, character.Height);
-
-                    for (int i = 0; i < collisionTiles.Count; i++)
-                    {
-                        if (testCol.Intersects(collisionTiles[i]))
-                            col++;
-                    }
-
-                    if (col > 0)
-                        return true;
-                    else
-                        return false;
-
-                    break;
-                case "Left":
-                    testCharX -= Convert.ToInt32(speed);
-                    testCol = new Rectangle(testCharX, testCharY, character.Width, character.Height);
-
-                    for (int i = 0; i < collisionTiles.Count; i++)
-                    {
-                        if (testCol.Intersects(collisionTiles[i]))
-                            col++;
-                    }
-
-                    if (col > 0)
-                        return true;
-                    else
-                        return false;
-
-                    break;
-                case "Down":
-                    break;
-                case "Up":
-                    break;
-                default:
-                    return true;
-                    break;
-            }
-            return true;
-        }*/
-
-        private void updateInput()
-        {
-            KeyboardState currentState = Keyboard.GetState();
-
-            if (currentState.IsKeyDown(Keys.Right) && !oldState.IsKeyDown(Keys.Right))
-                Movement.Move("Right");
-            if (currentState.IsKeyDown(Keys.Left) && !oldState.IsKeyDown(Keys.Left))
-                Movement.Move("Left");
-            if (currentState.IsKeyDown(Keys.Down) && !oldState.IsKeyDown(Keys.Down))
-                Movement.Move("Down");
-            if (currentState.IsKeyDown(Keys.Up) && !oldState.IsKeyDown(Keys.Up))
-                Movement.Move("Up");
-            oldState = currentState;
         }
 
         /// <summary>
@@ -276,6 +192,7 @@ namespace StoraProjektet
             spriteBatch.Draw(character, new Rectangle(Convert.ToInt32(charPlace.X) + charWidth, Convert.ToInt32(charPlace.Y) + charHeight, Convert.ToInt32((0.75 * gameSize)), Convert.ToInt32((0.75 * gameSize))), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
+            
         }
     }
 }

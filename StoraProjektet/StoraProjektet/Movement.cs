@@ -2,11 +2,29 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework.Input;
 
 namespace StoraProjektet
 {
     public class Movement
     {
+        //KeyboardState oldState;
+
+        public static void Update()
+        {
+            KeyboardState currentState = Keyboard.GetState();
+
+            if (currentState.IsKeyDown(Keys.Right) /*&& !oldState.IsKeyDown(Keys.Right)*/)
+                Move("Right");
+            if (currentState.IsKeyDown(Keys.Left) /*&& !oldState.IsKeyDown(Keys.Left)*/)
+                Move("Left");
+            if (currentState.IsKeyDown(Keys.Down) /*&& !oldState.IsKeyDown(Keys.Down)*/)
+                Move("Down");
+            if (currentState.IsKeyDown(Keys.Up) /*&& !oldState.IsKeyDown(Keys.Up)*/)
+                Move("Up");
+            //oldState = currentState;
+        }
+
         public static void Move(string direction)
         {
             switch (direction)
